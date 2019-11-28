@@ -1,0 +1,23 @@
+<h1>Contacts</h1>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Email</th>
+</tr>
+</thead>
+<tbody>
+{% for contact in object_list %}
+<tr>
+<td>{{ contact.name }}</td>
+<td>{{ contact.email }}</td>
+<td>
+</td>
+</tr>
+
+{% endfor %}
+</tbody>
+</table>
+
+<a  href="{% url "library:author-add" %}">Add new author</a>
